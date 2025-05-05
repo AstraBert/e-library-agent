@@ -1,0 +1,5 @@
+.venv/
+.mypy_cache/
+books/
+.env
+*.code-workspace
