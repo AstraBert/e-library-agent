@@ -1,11 +1,10 @@
-from linkup import LinkupClient, LinkupSourcedAnswer
+from linkup import LinkupClient
 from llama_index.core.llms import ChatMessage
 from pydantic import BaseModel, Field
 from llama_index.llms.openai import OpenAI
-from typing import Tuple
 import json
 
-with open("/run/secrets/mistral_key", "r") as f:
+with open("/run/secrets/openai_key", "r") as f:
     openai_api_key = f.read()
 f.close()
 
@@ -30,7 +29,7 @@ llm_eval = llm.as_structured_llm(EvaluateContext)
 
 async def deepsearch(query: str) -> str:
     """Useful to search for precise information in the depths of the web when the users asks you information about books of a certain type, or about a specific book.
-    
+
     Args:
         query (str): the query to be searched"""
     response = linkup_client.search(

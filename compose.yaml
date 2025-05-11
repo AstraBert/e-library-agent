@@ -1,1 +1,24 @@
-# to fill up
+name: e-library
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - 6333:6333
+      - 6334:6334
+    volumes:
+      - ./qdrant/storage/:/qdrant/storage/
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    secrets:
+      - openai_key
+      - linkup_key
+
+secrets:
+  openai_key:
+    environment: openai_api_key
+  linkup_key:
+    environment: linkup_api_key

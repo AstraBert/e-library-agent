@@ -3,3 +3,5 @@
 books/
 .env
 *.code-workspace
+.ruff_cache/
+qdrant/
