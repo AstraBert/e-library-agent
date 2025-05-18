@@ -3,7 +3,7 @@
 <h2 align="center">A virtual agent for your virtual books📚</h2>
 
 <div align="center">
-    <h3>If you find Code-RAGent useful, please consider to donate and support the project:</h3>
+    <h3>If you find E-Library-Agent useful, please consider to donate and support the project:</h3>
     <a href="https://github.com/sponsors/AstraBert"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="GitHub Sponsors Badge"></a>
 </div>
 <br>
