@@ -1,0 +1,7 @@
+.venv/
+.mypy_cache/
+books/
+.env
+*.code-workspace
+.ruff_cache/
+qdrant/
